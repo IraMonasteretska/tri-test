@@ -1,0 +1,252 @@
+.pagewrap {
+    padding-top: 105px;
+}
+
+.fsect {
+    height: 415px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(91.24deg, rgba(0, 0, 0, 0.52) 14.21%, rgba(0, 0, 0, 0.52) 14.22%, rgba(0, 0, 0, 0.396575) 39.4%, rgba(0, 0, 0, 0.252973) 54.54%, rgba(0, 0, 0, 0) 74.98%);
+    }
+
+    &>img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 0 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    h1 {
+        color: #fff;
+        letter-spacing: 0.01em;
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 150%;
+        margin-bottom: 18px;
+        text-transform: uppercase;
+        font-style: italic;
+
+        span {
+            color: transparent;
+            -webkit-text-stroke: 1px #fff;
+            text-stroke: 1px #fff;
+            text-shadow: none;
+            font-family: sans-serif;
+        }
+    }
+
+    .descr {
+        max-width: 870px;
+        color: #fff;
+        letter-spacing: 0.01em;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+
+        p {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.teamsection {
+    padding: 60px 0;
+
+    h2 {
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 122%;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: #333;
+        margin-bottom: 40px;
+
+        span {
+            color: transparent;
+            -webkit-text-stroke: 1px #E80C2A;
+            text-stroke: 1px #E80C2A;
+            text-shadow: none;
+            font-family: sans-serif;
+        }
+    }
+
+    .teamsection__descr {
+        margin-bottom: 90px;
+
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            color: #131313;
+        }
+    }
+
+    .team__photowrapp {
+        position: relative;
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            right: -14px;
+            top: 9px;
+            width: 100%;
+            height: calc(100% - 9px);
+            border: 2px solid #E80C2A;
+            border-left: none;
+            transform: skew(-3deg, 0deg);
+        }
+    }
+
+    .team__photosect {
+        position: relative;
+        padding: 0 0 101% 0;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+
+    .teammate-descr {
+        padding-left: 30px;
+
+        .title {
+            color: #333;
+            letter-spacing: 0.01em;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 35px;
+            line-height: 122%;
+            margin-bottom: 10px;
+        }
+
+        .proff {
+            margin-bottom: 35px;
+            color: #8D8D8D;
+            letter-spacing: 0.01em;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 122%;
+        }
+
+        ol {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 0 20px 0;
+
+            li {
+                color: #131313;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 150%;
+            }
+        }
+
+        p {
+            color: #131313;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+        }
+
+        .teammate__medwrlists {
+            display: flex;
+            flex-wrap: wrap;
+
+            .teammate__medwrlist {
+                max-width: 50%;
+                flex: 0 0 50%;
+                display: flex;
+                margin-top: 20px;
+                align-items: center;
+
+                img {
+                    max-width: 84px;
+                    flex: 0 0 84px;
+                }
+
+                p {
+                    margin: 0;
+                    max-width: calc(100% - 84px);
+                    flex: 0 0 calc(100% - 84px);
+                    font-weight: 600;
+                    font-size: 18px;
+                    color: #333;
+                    line-height: 150%;
+                    padding-left: 20px;
+                }
+            }
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+
+    }
+
+    .teammate-descr__header {
+        min-height: 80px;
+    }
+
+    .teambox {
+        margin-bottom: 150px;
+        p {
+            margin-bottom: 20px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &:nth-child(even) {
+            .row {
+                flex-direction: row-reverse;
+            }
+
+            .teammate-descr {
+                padding-left: 0;
+                padding-right: 30px;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+}
