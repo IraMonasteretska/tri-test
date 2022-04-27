@@ -110,8 +110,10 @@ header.header {
 
         .header__menu {
             width: 100%;
-            max-width: calc(100% - 85px);
-            flex: 0 0 calc(100% - 85px);
+            // max-width: calc(100% - 85px);
+            // flex: 0 0 calc(100% - 85px);
+            max-width: 100%;
+            flex: 0 0 100%;
             list-style-type: none;
             padding: 0;
             margin: 0;
@@ -191,14 +193,18 @@ header.header {
 
         .pointbtn {
             width: 100%;
-            max-width: 85px;
-            flex: 0 0 85px;
+            max-width: 25px;
+            flex: 0 0 25px;
             text-align: right;
 
-            button {
+            a {
                 background: transparent;
                 border: none;
                 outline: none;
+
+                &::after {
+                    display: none;
+                }
             }
         }
     }
@@ -293,6 +299,57 @@ header.header {
     display: none;
 }
 
+
+.header__bottsection .menu1 .header__menu li.pointbtn {
+   min-width: 40px;
+
+    &::before {
+        display: none;
+    }
+
+    >a::after {
+        display: none !important;
+    }
+
+    >a {
+        text-align: right;
+        padding: 0 0 0 40px;
+    }
+
+    >.submenu {
+        left: initial !important;
+        right: 0 !important;
+    }
+}
+
+.header__bottsection .menu1 .header__menu li.sublink.pointbtn .submenu {
+   
+    width: 250px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    li {
+        max-width: 100%;
+        flex: 0 0 100%;
+        text-align: left;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        a {
+            text-align: left;
+            padding-left: 0;
+        }
+    }
+}
+
+
+
+
+
+
+
 @media(max-width:1850.8px) {
     .header__bottsection .menu1 .header__menu li.sublink .submenu {
         left: -60px;
@@ -302,6 +359,9 @@ header.header {
 }
 
 @media(max-width:1600.8px) {
+    .header__bottsection .menu1 .header__menu li.sublink.pointbtn .submenu {
+        padding: 20px 15px;
+    }
     .header__topsection .header__tel a {
         font-size: 20px;
     }
@@ -463,6 +523,7 @@ header.header {
                 &.sublink {
                     &>a {
                         padding-right: 40px;
+
                         &::after {
                             content: '';
                             display: inline-block;
@@ -491,8 +552,10 @@ header.header {
             margin: 0;
             padding: 20px 20px 20px 30px;
             display: none;
+
             li {
                 margin-bottom: 10px;
+
                 a {
                     color: #fff;
                     font-weight: 500;
@@ -514,7 +577,7 @@ header.header {
             bottom: 90px;
         }
 
-       
+
     }
 
 

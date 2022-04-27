@@ -49,6 +49,8 @@ $(document).ready(function () {
         appendArrows: '.reviewssliderbtns',
         prevArrow: '<button type="button" class="slick-prev"></button>',
         nextArrow: '<button type="button" class="slick-next"></button>',
+        autoplay: true,
+        autoplaySpeed: 3000,
         responsive: [{
                 breakpoint: 1200,
                 settings: {
@@ -83,5 +85,15 @@ $(document).ready(function () {
     $('.closemenu').click(function () {
         $('.mobilemenu-wrapper').removeClass('show');
     });
+
+
+
+    // $('.pointbtn a').click(function () {
+    //     $(this).next('.submenu').toggleClass('show');
+    // });
+
+
+
+
 
 });
