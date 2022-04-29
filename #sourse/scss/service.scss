@@ -1,0 +1,373 @@
+.fsect h1 {
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.logosblock.padd40 {
+    padding: 40px 0;
+}
+
+.servtextblock {
+    padding: 0 0 20px 0;
+
+    p {
+        color: #131313;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.recserv {
+    padding: 80px 0 90px;
+
+    h3 {
+        color: #333333;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 150%;
+        margin-bottom: 73px;
+
+        span {
+            color: transparent;
+            -webkit-text-stroke: 1px #E80C2A;
+            text-stroke: 1px #E80C2A;
+            text-shadow: none;
+            font-family: sans-serif;
+        }
+    }
+
+    .servcontent {
+        p {
+            color: #131313;
+            margin-bottom: 20px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+        }
+
+        img {
+            width: 100%;
+            margin-bottom: 30px;
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 40px 0 20px 0;
+
+            li {
+                color: #131313;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 150%;
+                margin-bottom: 30px;
+                position: relative;
+                padding-left: 34px;
+
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    width: 19px;
+                    height: 11px;
+                    background: url('../img/listpoint.svg') no-repeat center / 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 6px;
+
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            &.twocol {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                li {
+                    width: 100%;
+                    max-width: 40%;
+                    flex: 0 0 40%;
+
+                    &:nth-last-child(1),
+                    &:nth-last-child(2) {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+
+
+    }
+}
+
+.recservlists {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .recservlist {
+        padding-left: 65px;
+        position: relative;
+
+        p {
+            margin: 0;
+            color: #131313;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 150%;
+            background-color: #fff;
+            z-index: 2;
+            position: relative;
+        }
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 124px;
+            height: 79px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background: url('../img/borderimg.png') no-repeat center / 100%;
+        }
+    }
+}
+
+.recserv.prevserv {
+    padding: 80px 0 40px;
+
+    h3 {
+        margin-bottom: 40px;
+    }
+
+
+
+
+
+
+}
+
+.recserv.reactserv {
+    padding: 40px 0 110px;
+
+    h3 {
+        margin-bottom: 40px;
+    }
+}
+
+
+@media(max-width:1600.8px) {
+
+    .recservlists .recservlist:before {
+        background: url(../img/borderimg.png) no-repeat center/100% 100%;
+        width: 100px;
+        height: 60px;
+    }
+
+    .recserv h3 {
+        margin-bottom: 50px;
+    }
+
+    .recservlists .recservlist {
+        padding-left: 55px;
+    }
+
+    .recserv.prevserv h3 {
+        margin-bottom: 30px;
+    }
+
+    .recserv .servcontent ul li {
+        margin-bottom: 20px;
+    }
+
+
+
+
+
+    .servtextblock p,
+    .recservlists .recservlist p,
+    .recserv .servcontent p,
+    .recserv .servcontent ul.twocol li,
+    .recserv .servcontent ul li {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:1400.8px) {
+    .recserv {
+        padding: 60px 0 60px;
+    }
+
+    .recserv.prevserv {
+        padding: 60px 0 20px;
+    }
+
+    .recserv.reactserv {
+        padding: 20px 0 60px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .logosblock__serv {
+        .logosblock__wrap img {
+            max-width: 100px;
+        }
+    }
+
+
+
+
+
+
+}
+
+@media(max-width: 991.8px) {
+    .logosblock__serv .logosblock__wrap {
+        // flex-wrap: wrap;
+        // justify-content: space-around;
+
+        img {
+            max-width: 90px;
+            // margin: 0 30px;
+        }
+    }
+
+    .recservlists {
+        flex-wrap: wrap;
+    }
+
+    .recservlists .recservlist {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 50px;
+
+        p {
+            br {
+                display: none;
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .recserv .servcontent ul.twocol li {
+        max-width: 46%;
+        flex: 0 0 46%;
+    }
+
+    .recserv .servcontent ul.twocol {
+        padding-left: 0;
+    }
+
+    .recserv .servcontent ul {
+        margin-top: 20px;
+        padding-left: 0;
+    }
+
+
+
+
+    .recserv.prevserv h3,
+    .recserv.reactserv h3 {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media(max-width:767.8px) {
+    .logosblock__serv .logosblock__wrap img {
+        max-width: 110px;
+    }
+
+
+
+
+
+
+
+    .recserv h3 {
+        font-size: 28px;
+    }
+
+}
+
+@media(max-width:575.8px) {
+    .logosblock__serv .logosblock__wrap img {
+        max-width: 80px;
+        padding: 10px;
+    }
+
+    .logosblock.logosblock__serv {
+        padding: 30px 0;
+    }
+
+    .recservlists .recservlist:before {
+        width: 80px;
+        height: 50px;
+    }
+
+    .recservlists .recservlist {
+        margin-bottom: 30px;
+        padding-left: 35px;
+    }
+
+    .recservlists .recservlist p {
+        font-size: 14px;
+    }
+
+    .recserv.prevserv {
+        padding-top: 40px;
+    }
+
+    .recserv .servcontent ul.twocol li {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .recserv .servcontent ul.twocol li:nth-last-child(2) {
+        margin-bottom: 20px;
+    }
+
+    .recserv .servcontent ul:last-child {
+        margin-bottom: 0;
+    }
+    
+    .recserv.reactserv {
+        padding-bottom: 40px;
+    }
+
+
+
+    .recserv h3 {
+        font-size: 24px;
+    }
+
+    .recserv {
+        padding: 40px 0;
+    }
+
+    .recserv h3 {
+        margin-bottom: 40px;
+    }
+}
+
+.bottmainbg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

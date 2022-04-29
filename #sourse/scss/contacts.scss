@@ -1,0 +1,818 @@
+.contacts {
+    padding: 0 0 0 0;
+}
+
+.contacts__textsect {
+    padding: 60px 0 48px;
+
+    p {
+        margin-bottom: 20px;
+        color: #131313;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.contacts__mapsect {
+    padding: 50px 0;
+
+    .mapwrapp {
+        img {
+            width: 100%;
+        }
+    }
+
+    .contadressbox {
+        margin-bottom: 80px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .title {
+            display: inline-block;
+            position: relative;
+            margin-bottom: 29px;
+            text-transform: uppercase;
+            color: #333333;
+            font-weight: 700;
+            font-size: 21px;
+            line-height: 150%;
+
+            &::after {
+                content: '';
+                display: inline-block;
+                position: absolute;
+                left: 0;
+                bottom: 8px;
+                height: 3px;
+                width: 100%;
+                background: rgba(232, 12, 42, 0.67);
+            }
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            max-width: 365px;
+
+            li {
+                padding-left: 45px;
+                margin-bottom: 20px;
+                position: relative;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                a {
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 150%;
+                    color: #131313;
+                }
+
+                &:after {
+                    content: '';
+                    display: inline-block;
+                    width: 25px;
+                    height: 25px;
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+
+            .addr::after {
+                background: url('../img/contpin.svg') no-repeat center / 100%;
+            }
+
+            .tel::after {
+                background: url('../img/conttel.svg') no-repeat center / 100%;
+            }
+
+            .mail::after {
+                background: url('../img/contmail.svg') no-repeat center / 100%;
+            }
+        }
+    }
+
+
+
+
+
+}
+
+.workinghours {
+    padding: 50px 0 100px;
+
+    .workinghours__content {
+        padding-top: 67px;
+
+        .title {
+            display: inline-block;
+            text-transform: uppercase;
+            color: #333333;
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 150%;
+            margin-bottom: 40px;
+            position: relative;
+
+            &::after {
+                content: '';
+                display: inline-block;
+                height: 3px;
+                width: 100%;
+                position: absolute;
+                background: rgba(232, 12, 42, 0.67);
+                bottom: 14px;
+                left: 0;
+            }
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin-bottom: 20px;
+                color: #131313;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 150%;
+                width: 100%;
+                max-width: 50%;
+                flex: 0 0 50%;
+
+                span {
+                    font-weight: 600;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .clockwrap {
+
+        img {
+            max-width: 100%;
+        }
+
+
+    }
+}
+
+.policysect {
+    background-color: #232323;
+    padding: 70px 0;
+    position: relative;
+    background-image: url('../img/privbg.png');
+    background-position: right bottom;
+    background-repeat: no-repeat;
+
+    .policybox {
+        display: flex;
+        margin-bottom: 78px;
+        flex-wrap: wrap;
+
+        .title {
+            width: 100px;
+            max-width: 308px;
+            flex: 0 0 308px;
+            padding-right: 18px;
+            color: #fff;
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 150%;
+            margin: 0;
+        }
+
+        .descr {
+            width: 100px;
+            max-width: calc(100% - 308px);
+            flex: 0 0 calc(100% - 308px);
+
+            p {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 150%;
+                color: #fff;
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .weserve {
+        padding-left: 80px;
+
+        .title {
+            margin-bottom: 40px;
+            color: #fff;
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 150%;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0 0 0 30px;
+            margin: 0 0 28px 0;
+
+            li {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 150%;
+                color: #fff;
+                margin-bottom: 35px;
+                padding-left: 44px;
+                position: relative;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    width: 24px;
+                    height: 24px;
+                    position: absolute;
+                    left: 0;
+                    top: 1px;
+                    background: url('../img/listpoint1.svg') no-repeat center / 100% 100%;
+                }
+            }
+        }
+
+        .descr {
+            margin: 0;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            color: #fff;
+        }
+    }
+
+}
+
+.driving-directions {
+    padding: 100px 0;
+    position: relative;
+    background: url('../img/bggrey.png') no-repeat;
+    background-position: right bottom;
+    background-size: auto 156px;
+
+    .drivdirwrapp {
+        h3 {
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 122%;
+            color: #333;
+            margin-bottom: 50px;
+
+            span {
+                color: transparent;
+                -webkit-text-stroke: 1px #E80C2A;
+                text-stroke: 1px #E80C2A;
+                text-shadow: none;
+                font-family: sans-serif;
+                display: block;
+            }
+        }
+
+        h6 {
+            margin-bottom: 40px;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 150%;
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0 0 60px 0;
+            padding: 0 0 0 45px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            li {
+                position: relative;
+                margin-bottom: 35px;
+                color: #333;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 150%;
+                padding-left: 74px;
+                width: 100%;
+                max-width: 40%;
+                flex: 0 0 40%;
+                padding-right: 40px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    width: 24px;
+                    height: 24px;
+                    background: url('../img/listpoint1.svg') no-repeat center / 100% 100%;
+                    position: absolute;
+                    left: 30px;
+                    top: 1px;
+                }
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.formsection {
+    padding: 102px 0 50px;
+    position: relative;
+
+    &>img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .formsection__textbox {
+        position: relative;
+        z-index: 2;
+
+        h3 {
+            text-transform: uppercase;
+            color: #FFFFFF;
+            font-weight: 700;
+            font-size: 41px;
+            line-height: 122%;
+            margin-bottom: 40px;
+
+            span {
+                color: transparent;
+                -webkit-text-stroke: 1px #fff;
+                text-stroke: 1px #fff;
+                text-shadow: none;
+                font-family: sans-serif;
+                display: block;
+            }
+        }
+
+        .descr {
+            max-width: 520px;
+
+            p {
+                font-weight: 400;
+                font-size: 19px;
+                line-height: 150%;
+                color: #fff;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .formsection__form {
+        position: relative;
+        z-index: 2;
+    }
+
+    .formsection__form {
+        width: 100%;
+
+        .inpfield {
+            margin-bottom: 45px;
+        }
+
+        input {
+            width: 100%;
+            height: 52px;
+            color: #fff;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 127%;
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid #fff;
+            outline: none;
+
+            &::placeholder {
+                color: #fff;
+            }
+        }
+
+        textarea {
+            width: 100%;
+            margin-top: 125px;
+            height: 52px;
+            color: #fff;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 127%;
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid #fff;
+            outline: none;
+            padding-top: 8px;
+            resize: none;
+
+            &::placeholder {
+                color: #fff;
+            }
+        }
+    }
+
+    .buttonform {
+        text-align: center;
+        margin-top: 90px;
+
+        button {
+            max-width: 280px;
+            width: 100%;
+            border: none;
+            margin: 0 auto;
+
+            img {
+                width: 8px;
+                margin-top: -2px;
+            }
+        }
+    }
+
+
+}
+
+
+@media(max-width:1600.8px) {
+    .contacts__textsect p {
+        font-size: 16px;
+    }
+
+    .contacts__textsect {
+        padding: 60px 0 30px;
+    }
+
+    .contacts__mapsect .contadressbox .title {
+        margin-bottom: 20px;
+    }
+
+    .workinghours .workinghours__content .title {
+        font-size: 30px;
+    }
+
+    .workinghours .workinghours__content .title:after {
+        bottom: 12px;
+    }
+
+    .workinghours .workinghours__content ul li {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .workinghours {
+        padding: 40px 0 80px;
+    }
+
+    .workinghours .clockwrap img {
+        max-width: 80%;
+    }
+
+    .policysect .policybox .title {
+        font-size: 21px;
+    }
+
+    .contacts__mapsect {
+        padding: 40px 0;
+    }
+
+    .contacts__mapsect .contadressbox ul li a {
+        font-size: 16px;
+    }
+
+    .policysect .policybox .descr p {
+        font-size: 16px;
+    }
+
+    .policysect .policybox {
+        margin-bottom: 50px;
+    }
+
+    .policysect .weserve .title {
+        font-size: 21px;
+        margin-bottom: 30px;
+    }
+
+    .policysect .weserve ul li {
+        font-size: 16px;
+        padding-left: 35px;
+    }
+
+    .policysect .weserve ul {
+        padding-left: 15px;
+    }
+
+    .policysect .weserve .descr {
+        font-size: 16px;
+    }
+
+    .driving-directions {
+        padding: 60px 0;
+    }
+
+    .driving-directions .drivdirwrapp ul li {
+        font-size: 16px;
+    }
+
+    .driving-directions .drivdirwrapp ul li {
+        padding-left: 35px;
+    }
+
+    .driving-directions .drivdirwrapp ul li:after {
+        left: 0;
+    }
+
+    .driving-directions .drivdirwrapp ul li {
+        margin-bottom: 25px;
+    }
+
+    .driving-directions .drivdirwrapp ul {
+        margin-bottom: 40px;
+    }
+
+    .formsection .formsection__textbox h3 {
+        margin-bottom: 30px;
+        font-size: 35px;
+    }
+
+    .formsection .formsection__textbox .descr p {
+        font-size: 16px;
+    }
+
+    .formsection .formsection__form input,
+    .formsection .formsection__form textarea {
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .formsection .formsection__form .inpfield {
+        margin-bottom: 35px;
+    }
+
+    .formsection .formsection__form textarea {
+        margin-top: 65px;
+    }
+
+    .formsection .buttonform {
+        margin-top: 50px;
+    }
+
+
+
+}
+
+@media(max-width:1199.8px) {
+    .contacts__mapsect .contadressbox {
+        margin-bottom: 40px;
+    }
+
+    .contacts__mapsect .contadressbox .title {
+        margin-bottom: 15px;
+    }
+
+    .workinghours .workinghours__content {
+        padding-top: 0px;
+    }
+
+    .policysect .weserve {
+        padding-left: 30px;
+    }
+
+
+}
+
+@media(max-width:991.8px) {
+    .contacts__textsect {
+        padding: 40px 0 20px;
+    }
+
+    .contacts__mapsect {
+        padding-top: 10px;
+        padding-bottom: 0;
+    }
+
+    .contadressbox-wrap {
+        display: flex;
+        margin: 0;
+
+        .contadressbox {
+            width: 100%;
+            max-width: 50%;
+            flex: 0 0 50%;
+        }
+    }
+
+    .clockwrap {
+        display: none;
+    }
+
+    .workinghours .workinghours__content .title {
+        margin-bottom: 20px;
+    }
+
+    .workinghours {
+        padding: 40px 0 40px;
+    }
+
+    .policysect .policybox .title {
+        font-size: 18px;
+        max-width: 230px;
+        flex: 0 0 230px;
+    }
+
+    .policysect .policybox .descr {
+        width: 100%;
+        max-width: calc(100% - 230px);
+        flex: 0 0 calc(100% - 230px);
+    }
+
+    .policysect .weserve {
+        padding-left: 0;
+        margin-top: 30px;
+    }
+
+    .driving-directions .drivdirwrapp h3 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .driving-directions .drivdirwrapp h6 {
+        margin-bottom: 20px;
+    }
+
+    .driving-directions .drivdirwrapp ul li {
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
+
+    .driving-directions .drivdirwrapp ul {
+        padding-left: 0;
+    }
+
+    .driving-directions .drivdirwrapp ul {
+        margin-bottom: 30px;
+    }
+
+    .formsection {
+        padding: 50px 0;
+    }
+
+    .formsection .formsection__textbox h3 {
+        font-size: 28px;
+    }
+
+    .formsection .formsection__textbox .descr {
+        margin-bottom: 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+}
+
+@media(max-width:767.8px) {
+    .policysect .policybox .title {
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 10px;
+        font-size: 21px;
+    }
+
+    .policysect .policybox .descr {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .policysect .policybox {
+        margin-bottom: 30px;
+    }
+
+    .driving-directions .drivdirwrapp ul li,
+    .contadressbox-wrap .contadressbox {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .contadressbox-wrap {
+        flex-wrap: wrap;
+    }
+
+    .mapwrapp {
+        margin-top: 30px;
+    }
+
+    .workinghours .workinghours__content .title {
+        font-size: 28px;
+    }
+
+    .contacts__mapsect .contadressbox .title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .workinghours .workinghours__content .title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .workinghours .workinghours__content .title:after {
+        bottom: 7px;
+    }
+
+    .workinghours .workinghours__content ul li {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .policysect {
+        padding: 40px 0;
+    }
+
+    .policysect .policybox .title {
+        font-size: 18px;
+    }
+
+    .driving-directions .drivdirwrapp h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .driving-directions .drivdirwrapp h6 {
+        font-size: 16px;
+    }
+
+    .contadressbox-wrap .contadressbox,
+    .driving-directions .drivdirwrapp ul li {
+        padding-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .formsection .formsection__textbox h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .formsection .formsection__form input,
+    .formsection .formsection__form textarea {
+        font-size: 16px;
+    }
+
+    .formsection .formsection__form .inpfield {
+        margin-bottom: 20px;
+    }
+
+    .formsection .formsection__form textarea {
+        margin-top: 30px;
+    }
+
+    .formsection .buttonform {
+        margin-top: 30px;
+    }
+
+
+}
