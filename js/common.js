@@ -87,10 +87,11 @@ $(document).ready(function () {
     });
 
 
-
-    // $('.pointbtn a').click(function () {
-    //     $(this).next('.submenu').toggleClass('show');
-    // });
+    // read more
+    $('.team__readmore').click(function () {
+        $(this).find('text').toggle();
+        $(this).parents('.teammate-descr').find('.textbox').toggleClass('show');
+    });
 
 
 
