@@ -94,7 +94,30 @@ $(document).ready(function () {
     });
 
 
+    $('.tabssection__tabbtn').click(function () {
+        $('.tabssection__tabbtn').removeClass('active');
+        $(this).addClass('active');
+    });
 
+    $('.tabbtn1').click(function () {
+        $('.tabcontent').addClass('hide');
+        $('.tabcont1').removeClass('hide');
+    });
+    $('.tabbtn2').click(function () {
+        $('.tabcontent').addClass('hide');
+        $('.tabcont2').removeClass('hide');
+    });
+    $('.tabbtn3').click(function () {
+        $('.tabcontent').addClass('hide');
+        $('.tabcont3').removeClass('hide');
+    });
+
+    // social fixed box
+    $('.iconsect').click(function () {
+        $('.iconsect img').toggle();
+        $('.socfix__group').toggleClass('show');
+
+    });
 
 
 });
