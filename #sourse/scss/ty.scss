@@ -1,0 +1,142 @@
+.tywrapper {
+    position: relative;
+    padding-top: 105px;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(90.8deg, rgba(0, 0, 0, 0.52) 4.4%, rgba(0, 0, 0, 0.52) 13.6%, rgba(0, 0, 0, 0.52) 23.98%, rgba(0, 0, 0, 0.52) 34.88%, rgba(0, 0, 0, 0.52) 42.46%, rgba(0, 0, 0, 0.390434) 57.09%, rgba(0, 0, 0, 0.252973) 65.35%, rgba(0, 0, 0, 0) 96.24%);
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .tytextbox {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+
+        .tywrap {
+            max-width: 655px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #fff;
+            text-transform: uppercase;
+            font-style: italic;
+            font-weight: 700;
+            font-size: 90px;
+            line-height: 122%;
+            margin-bottom: 25px;
+        }
+
+        .descr {
+            margin-bottom: 60px;
+
+            p {
+                color: #fff;
+                font-weight: 400;
+                font-size: 26px;
+                line-height: 150%;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        a {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media(max-width:1600.8px) {
+    .tywrapper .tytextbox h1 {
+        font-size: 70px;
+        margin-bottom: 15px;
+    }
+
+    .tywrapper .tytextbox .descr p {
+        font-size: 20px;
+    }
+
+    .tywrapper .tytextbox .descr {
+        margin-bottom: 40px;
+    }
+
+
+
+}
+
+@media(max-width:1199.8px) {
+    .tywrapper {
+        padding-top: 80px;
+        height: calc(100vh - 80px);
+        min-height: 500px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 100% 0;
+        }
+    }
+}
+
+@media(max-width:991.8px) {
+    .tywrapper .tytextbox .tywrap {
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:767.8px) {
+
+    .tywrapper .tytextbox h1 {
+        font-size: 46px;
+    }
+
+    .tywrapper .tytextbox .descr p {
+        font-size: 16px;
+    }
+
+    .tywrapper .tytextbox a {
+        font-size: 14px;
+        width: 170px;
+        height: 40px;
+    }
+
+}
+
+@media(max-width:575.8px) {
+    .tywrapper .tytextbox h1 {
+        font-size: 36px;
+    }
+
+    .tywrapper .tytextbox .descr p {
+        font-size: 14px;
+
+        // br {
+        //     display: none;
+        // }
+    }
+
+    .tywrapper:after {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .tywrapper {
+        padding-top: 60px;
+        height: calc(100vh - 60px);
+    }
+
+}

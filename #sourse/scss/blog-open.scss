@@ -1,5 +1,6 @@
 .openblog {
     padding: 60px 0 110px;
+    position: relative;
 
     p {
         color: #131313;
@@ -94,9 +95,91 @@
         }
     }
 }
+
 .openblog blockquote p {
     font-weight: 500;
 }
+
+.articleshare {
+    position: sticky;
+    top: 220px;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width: 54px;
+        text-align: center;
+
+        li {
+            display: block;
+            margin-bottom: 10px;
+
+            .title {
+                color: rgba(13, 32, 58, 0.66);
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 150%;
+                margin-bottom: 6px;
+                text-transform: uppercase;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 46px;
+                height: 46px;
+                background: #E80C2A;
+                margin: 0 auto;
+                transition: 0.3s;
+
+                img {
+                    width: auto;
+                    height: auto;
+                    margin: 0;
+                }
+
+                &:hover {
+                    background: #bb0820;
+                }
+            }
+
+            &:nth-child(3) {
+                a img {
+                    width: 32px;
+                }
+            }
+
+            &:nth-child(4) {
+                a img {
+                    width: 32px;
+                }
+            }
+        }
+    }
+}
+
+.openblogwrapper {
+    display: flex;
+    .openblogleft {
+        width: 100%;
+        max-width: 100px;
+        flex: 0 0 100px;
+    }
+    .openblogright {
+        width: 100%;
+        max-width: calc(100% - 100px);
+        flex: 0 0 calc(100% - 100px);
+    }
+}
+
+
+
 
 @media(max-width:1600.8px) {
     .fsect {
@@ -191,9 +274,14 @@
         display: none;
     }
 
+    .openblogleft {
+        display: none;
+    }
 
-
-
+    .openblogwrapper .openblogright {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
 
 
 
@@ -240,7 +328,8 @@
         padding: 20px 20px;
     }
 
-    .openblog blockquote:after, .openblog blockquote:before {
+    .openblog blockquote:after,
+    .openblog blockquote:before {
         width: 15px;
         height: 10px;
     }
